@@ -8,7 +8,14 @@ export default {
         './storage/framework/views/*.php',
         './resources/views/**/*.blade.php',
     ],
-
+    safelist: [
+        {
+            pattern: /^bg-/,
+        },
+        {
+            pattern: /^text-/,
+        }
+    ],
     theme: {
         extend: {
             fontFamily: {
